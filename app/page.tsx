@@ -1,19 +1,29 @@
-import { Button } from "@/components/ui/button"
+import { ActivityHeatmap } from "@/components/sections/activity-heatmap"
+import { ActivityTimeline } from "@/components/sections/activity-timeline"
+import { ContactCta } from "@/components/sections/contact-cta"
+import { Hero } from "@/components/sections/hero"
+import { LogoWall } from "@/components/sections/logo-wall"
+import { Projects } from "@/components/sections/projects"
+import { SiteFooter } from "@/components/sections/site-footer"
+import { SiteNav } from "@/components/sections/site-nav"
+import { StatBand } from "@/components/sections/stat-band"
+import { Strengths } from "@/components/sections/strengths"
 
 export default function Page() {
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
-        <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
-        </div>
-        <div className="font-mono text-xs text-muted-foreground">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
-      </div>
+    <div className="min-h-svh scroll-smooth">
+      <SiteNav />
+      <main>
+        <Hero />
+        <StatBand />
+        <LogoWall />
+        <Strengths />
+        <ActivityTimeline />
+        <ActivityHeatmap />
+        <Projects />
+        <ContactCta />
+      </main>
+      <SiteFooter />
     </div>
   )
 }
