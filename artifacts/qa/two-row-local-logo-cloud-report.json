@@ -1,0 +1,104 @@
+{
+  "url": "http://localhost:3107",
+  "viewports": [
+    {
+      "name": "desktop",
+      "title": "Companies I’ve worked with",
+      "fontSize": 12,
+      "originalLogos": 22,
+      "rows": [
+        11,
+        11
+      ],
+      "imagesLoaded": true,
+      "movesLeft": true,
+      "continuesOnHover": true,
+      "animation": {
+        "name": "logo-cloud-scroll",
+        "duration": "44s",
+        "iterations": "infinite",
+        "timing": "linear",
+        "groups": [
+          2464,
+          2464
+        ],
+        "width": 4928
+      },
+      "seamlessLoopDeltaPx": 0.1121826171875,
+      "graphWidth": 1103.984375,
+      "introExact": true,
+      "removedHeroButtons": true,
+      "noHorizontalOverflow": true,
+      "bottomSection": true
+    },
+    {
+      "name": "tablet",
+      "title": "Companies I’ve worked with",
+      "fontSize": 12,
+      "originalLogos": 22,
+      "rows": [
+        11,
+        11
+      ],
+      "imagesLoaded": true,
+      "movesLeft": true,
+      "continuesOnHover": true,
+      "animation": {
+        "name": "logo-cloud-scroll",
+        "duration": "44s",
+        "iterations": "infinite",
+        "timing": "linear",
+        "groups": [
+          2464,
+          2464
+        ],
+        "width": 4928
+      },
+      "seamlessLoopDeltaPx": 0.1121826171875,
+      "graphWidth": 720,
+      "introExact": true,
+      "removedHeroButtons": true,
+      "noHorizontalOverflow": true,
+      "bottomSection": true
+    },
+    {
+      "name": "mobile",
+      "title": "Companies I’ve worked with",
+      "fontSize": 12,
+      "originalLogos": 22,
+      "rows": [
+        11,
+        11
+      ],
+      "imagesLoaded": true,
+      "movesLeft": true,
+      "continuesOnHover": true,
+      "animation": {
+        "name": "logo-cloud-scroll",
+        "duration": "44s",
+        "iterations": "infinite",
+        "timing": "linear",
+        "groups": [
+          1936,
+          1936
+        ],
+        "width": 3872
+      },
+      "seamlessLoopDeltaPx": 0.08807373046875,
+      "graphWidth": 342,
+      "introExact": true,
+      "removedHeroButtons": true,
+      "noHorizontalOverflow": true,
+      "bottomSection": true
+    },
+    {
+      "name": "reduced-motion",
+      "animationDisabled": true,
+      "duplicateHidden": true,
+      "manualScroll": {
+        "overflow": "auto",
+        "scrollLeft": 300
+      }
+    }
+  ]
+}

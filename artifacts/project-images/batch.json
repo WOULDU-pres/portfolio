@@ -1,0 +1,55 @@
+{
+  "size": "1024x1536",
+  "variants": [
+    {
+      "name": "mini-pm",
+      "output": "../../public/projects/mini-pm.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: A cohesive education operations workspace: layered document cards, a presentation board, a file folder, subtle calendar grid and connected coaching nodes arranged as elegant physical objects."
+    },
+    {
+      "name": "airex",
+      "output": "../../public/projects/airex.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: An abstract enterprise AI platform: one luminous indigo core connecting elegant charcoal modular blocks and frosted glass panels with a few crimson connection lines; futuristic but calm and precise."
+    },
+    {
+      "name": "ai-assessment",
+      "output": "../../public/projects/ai-assessment.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: AI skills assessment as a sculptural analytics composition: a radial competency chart, ascending evaluation bars, and tidy modular assessment tiles on an ivory platform, rendered as physical objects without text."
+    },
+    {
+      "name": "survey-viewer",
+      "output": "../../public/projects/survey-viewer.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: A feedback and survey analytics viewer visualized as abstract speech bubbles, restrained bar charts, and layered response cards arranged in a clear balanced composition; no readable text."
+    },
+    {
+      "name": "erp-agent",
+      "output": "../../public/projects/erp-agent.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: An AI agent navigating enterprise data: a central luminous orb and architectural database cylinders, business-document cards and thin precise network links, with a focused intelligent-assistant mood."
+    },
+    {
+      "name": "semo",
+      "output": "../../public/projects/semo.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: A community project matching web service: interlocking web page cards and linked project tiles orbiting a hub, collaborative elegant modular layout, welcoming and professional with no people or text."
+    },
+    {
+      "name": "object-detection",
+      "output": "../../public/projects/object-detection.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: Computer vision in an industrial context: a camera lens scanning three geometric real-world objects on a clean desk, subtle glowing bounding-box frames surrounding them, precise detection aesthetic."
+    },
+    {
+      "name": "ai-robot",
+      "output": "../../public/projects/ai-robot.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: A compact AI robot and articulated robotic arm with a tasteful indigo sensor light, charcoal and ivory material, a few crimson details, photographed as a beautiful conceptual industrial design object."
+    },
+    {
+      "name": "image-editing",
+      "output": "../../public/projects/image-editing.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: An AI image editing concept: layered landscape photo cards with an elegant before-and-after transformation expressed through color, luminous selection brush and floating crop frame; no text or split labels."
+    },
+    {
+      "name": "agricultural-robot",
+      "output": "../../public/projects/agricultural-robot.png",
+      "prompt": "Create a polished conceptual illustration for a Korean AI engineer and educator portfolio, portrait 2:3 aspect ratio. Premium 3D editorial still life with sculptural forms, subtle tactile surfaces, ivory and light gray surroundings, charcoal elements with restrained crimson and electric-indigo accents. Soft studio light, sophisticated architectural composition, convincing depth, sharp hero objects in the upper two thirds, darker uncluttered lower third for UI text overlay. No letters, words, numbers, logos, watermarks, screenshots, UI labels or real company branding. This is a conceptual cover, not a literal product screenshot. Subject: An autonomous agricultural harvesting robot in a small sculptural greenhouse: delicate green plants with ripe red fruit, an ivory robotic gripper and compact mobile base, graceful human-centered technology with soft sunlight."
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "url": "https://portfolio-hwjoo.vercel.app",
+  "viewports": [
+    {
+      "name": "desktop",
+      "logoCount": 22,
+      "title": "worked with",
+      "fontSize": 12,
+      "logosOnly": true,
+      "allImagesLoaded": true,
+      "graphWidth": 1103.984375,
+      "graphOccupiesRow": true
+    },
+    {
+      "name": "mobile",
+      "logoCount": 22,
+      "title": "worked with",
+      "fontSize": 12,
+      "logosOnly": true,
+      "allImagesLoaded": true,
+      "graphWidth": 342,
+      "graphOccupiesRow": true
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+[
+  {
+    "id": "plan-security",
+    "org": "KITECH",
+    "topic": "환경 설정 교안 제작"
+  },
+  {
+    "id": "plan-heating",
+    "org": "한국지역난방공사",
+    "topic": "웹 개발, 머신러닝, RAG 등 교안 제작"
+  },
+  {
+    "id": "plan-ai-citizen",
+    "org": "삼성 AI Citizen",
+    "topic": "Claude Cowork 교안 제작"
+  },
+  {
+    "id": "plan-samsung",
+    "org": "삼성전자",
+    "topic": "Gemini, NotebookLM, Codex 교안 제작"
+  },
+  {
+    "id": "plan-gc",
+    "org": "녹십자홀딩스",
+    "topic": "바이브코딩 교안 제작"
+  },
+  {
+    "id": "plan-shinsegae",
+    "org": "신세계DF",
+    "topic": "Gemini, Google AI Studio 교안 제작"
+  },
+  {
+    "id": "plan-shinsegae-claude",
+    "org": "신세계DF",
+    "topic": "Claude, Claude Cowork, Claude Code 교안 제작"
+  },
+  {
+    "id": "plan-samsung-hr",
+    "org": "삼성",
+    "topic": "Claude Code 교안 제작"
+  },
+  {
+    "id": "plan-chosun",
+    "org": "조선일보",
+    "topic": "Make, Apps Script 교안 제작"
+  },
+  {
+    "id": "plan-korea-investment",
+    "org": "한국투자증권",
+    "topic": "Gemini, Apps Script 교안 제작"
+  },
+  {
+    "id": "plan-posco",
+    "org": "포스코인터내셔널",
+    "topic": "바이브코딩 교안 제작"
+  },
+  {
+    "id": "plan-timefolio",
+    "org": "타임폴리오",
+    "topic": "Claude Code 교안 제작"
+  },
+  {
+    "id": "plan-nongshim",
+    "org": "농심",
+    "topic": "AI 교육 교안 작업"
+  },
+  {
+    "id": "plan-hd",
+    "org": "HD현대 / HD현대중공업",
+    "topic": "MS Copilot 교안 제작"
+  },
+  {
+    "id": "plan-kolon",
+    "org": "코오롱",
+    "topic": "Gemini 교안 제작"
+  }
+]

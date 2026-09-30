@@ -1,39 +1,28 @@
-import { Building2, Terminal, Users, type LucideIcon } from "lucide-react"
+import {
+  BookOpenText,
+  Building2,
+  ChartNoAxesCombined,
+  CodeXml,
+  Database,
+  Lightbulb,
+  Terminal,
+  Users,
+  type LucideIcon,
+} from "lucide-react"
 
-export type Stat = { value: number; suffix: string; label: string }
+import calendarActivities from "./calendar-activities.json"
+import calendarCurriculum from "./calendar-curriculum.json"
+import clientLogos from "./client-logos.json"
+import extraOrgLogos from "./org-logos.json"
 
-export const stats: Stat[] = [
-  { value: 22, suffix: "+", label: "고객사 · 기관" },
-  { value: 20, suffix: "+", label: "기업 강의 · 튜터링" },
-  { value: 12, suffix: "", label: "교안 · 커리큘럼 설계" },
-  { value: 7, suffix: "+", label: "멘토링 · 코칭" },
-]
+export const calendarUpdatedAt = "2026-09-30"
+export const activityStartDate = "2025-11-01"
 
-export const activityPeriod = "2025.11 – 2026.07"
-
-export const clients: string[] = [
-  "포스코그룹",
-  "포스코인터내셔널",
-  "현대카드",
-  "삼성전자",
-  "삼성인력개발원",
-  "한국지역난방공사",
-  "카카오페이",
-  "셀트리온제약",
-  "신세계DF",
-  "조선일보",
-  "녹십자홀딩스",
-  "SKT",
-  "롯데지주",
-  "HD현대",
-  "한국투자증권",
-  "농심",
-  "코오롱",
-  "타임폴리오",
-  "HDC 아이파크몰",
-  "모트렉스",
-  "리얼게인",
-  "에스씨케이",
+export const clients: { name: string; logo: string }[] = clientLogos
+// Timeline-only logos: organisations kept out of the client logo wall.
+export const orgLogos: { name: string; logo: string }[] = [
+  ...clientLogos,
+  ...extraOrgLogos,
 ]
 
 export type Strength = {
@@ -56,7 +45,14 @@ export const strengths: Strength[] = [
     icon: Terminal,
     title: "실습형 기술 교육 (바이브코딩)",
     desc: "툴을 직접 손에 쥐여주는 실습 중심. 듣고 끝나는 강의가 아니라, 끝나면 바로 쓰는 교육.",
-    tags: ["Cursor AI", "Gemini", "NotebookLM", "Claude Cowork", "OpenClaw", "업무 자동화"],
+    tags: [
+      "Cursor AI",
+      "Gemini",
+      "NotebookLM",
+      "Claude Cowork",
+      "OpenClaw",
+      "업무 자동화",
+    ],
     tone: "tech",
   },
   {
@@ -68,136 +64,298 @@ export const strengths: Strength[] = [
   },
 ]
 
-export type Category = "corp" | "plan" | "mentor" | "tutor"
+export type Category = "education" | "mentoring" | "recorded"
+
+export const categoryLabels: Record<Category, string> = {
+  education: "교육",
+  mentoring: "멘토링",
+  recorded: "녹화 강의",
+}
+
+export type EducationType =
+  | "literacy"
+  | "vibe"
+  | "data"
+  | "llm"
+  | "mentoring"
+  | "curriculum"
+  | "recorded"
+
+export type EducationProgram = {
+  id: EducationType
+  title: string
+  label: string
+  icon: LucideIcon
+  image: string
+  desc: string
+  examples: string[]
+  caseStudy?: { org: string; period: string; topic: string }
+}
+
+export const educationPrograms: EducationProgram[] = [
+  {
+    id: "literacy",
+    title: "AI 리터러시 · 업무 활용",
+    label: "AI 리터러시",
+    icon: Lightbulb,
+    image: "/education/literacy-v2.jpg",
+    desc: "생성형 AI의 원리와 한계를 이해하고, 직무에 맞는 프롬프트와 도구 활용을 익힙니다.",
+    examples: ["ChatGPT Work", "Gemini · Claude", "NotebookLM"],
+  },
+  {
+    id: "vibe",
+    title: "바이브코딩",
+    label: "바이브코딩",
+    icon: CodeXml,
+    image: "/education/vibe-v2.jpg",
+    desc: "AI와 함께 웹앱과 업무 도구를 만들고, 반복 업무는 노코드·로우코드 자동화로 직접 구현합니다.",
+    examples: ["Cursor AI", "웹앱 · 업무 도구", "업무 자동화"],
+    caseStudy: {
+      org: "한국지역난방공사",
+      period: "2026.07",
+      topic: "노코드·로우코드 기반 자동화 구현 실습 및 업무 자동화 고도화",
+    },
+  },
+  {
+    id: "data",
+    title: "데이터 분석 · 머신러닝",
+    label: "데이터 · 머신러닝",
+    icon: ChartNoAxesCombined,
+    image: "/education/data-v2.jpg",
+    desc: "실무 데이터 분석과 시각화부터 예측 모델의 학습·평가, AI 서비스 구현까지 다룹니다.",
+    examples: ["분석 · 시각화", "예측 모델", "AI 서비스 구현"],
+    caseStudy: {
+      org: "한국지역난방공사",
+      period: "2026.09",
+      topic: "고장 예측 모델 구현·고도화 및 AI 시스템 설계",
+    },
+  },
+  {
+    id: "llm",
+    title: "LLM · RAG 응용 개발",
+    label: "LLM · RAG",
+    icon: Database,
+    image: "/education/llm-v2.jpg",
+    desc: "LLM 활용과 검색 증강 생성(RAG) 구조를 이해하고, 업무 데이터와 문서를 활용하는 AI 애플리케이션을 설계합니다.",
+    examples: ["LLM 활용", "RAG 구조", "문서 기반 질의응답"],
+    caseStudy: {
+      org: "한국지역난방공사",
+      period: "2026.06",
+      topic: "생성형 AI 활용 고도화 및 LLM 기반 업무 적용",
+    },
+  },
+  {
+    id: "mentoring",
+    title: "AI 프로젝트 멘토링",
+    label: "프로젝트 멘토링",
+    icon: Users,
+    image: "/education/mentoring-v2.jpg",
+    desc: "현업 과제 정의부터 기획·구현 피드백과 성과 발표까지, 팀이 직접 완성하도록 코칭합니다.",
+    examples: ["과제 정의", "기획 · 구현 피드백", "성과 발표 코칭"],
+  },
+  {
+    id: "curriculum",
+    title: "교안 · 커리큘럼 제작",
+    label: "교안 제작",
+    icon: BookOpenText,
+    image: "/education/curriculum-v2.jpg",
+    desc: "기업별 교육 교안과 커리큘럼, 실습 자료, 교안 템플릿을 설계·제작합니다.",
+    examples: ["기업별 교안", "커리큘럼 설계", "교안 템플릿"],
+  },
+]
 
 export type Activity = {
+  id: string
   date: string
+  lastDate: string
+  dates: string[]
   org: string
   topic: string
   cat: Category
-  role: string
+  // Empty when the topic is unconfirmed; several when one course spans them.
+  types: EducationType[]
+  // Mentored team projects, listed under the course in the mentoring tab.
+  projects?: string[]
 }
 
-export const categoryTabs: { value: Category | "all"; label: string }[] = [
+export const categoryTabs: { value: EducationType | "all"; label: string }[] = [
   { value: "all", label: "전체" },
-  { value: "corp", label: "기업 교육" },
-  { value: "plan", label: "교안 제작" },
-  { value: "mentor", label: "멘토링" },
-  { value: "tutor", label: "과외 · 특강" },
+  ...educationPrograms.map((program) => ({
+    value: program.id,
+    label: program.label,
+  })),
 ]
 
-export const activities: Activity[] = [
-  { date: "26.06", org: "삼성전자", topic: "전략마케팅팀 대상 AI 교육", cat: "corp", role: "기술튜터" },
-  { date: "26.05~06", org: "한국지역난방공사", topic: "AI Pioneer 교육: 데이터 분석·AI 프로젝트·업무 자동화", cat: "corp", role: "강사" },
-  { date: "26.05", org: "녹십자홀딩스", topic: "Hey GC 교육", cat: "corp", role: "교육 운영" },
-  { date: "26.05", org: "카카오페이", topic: "중간 리더 교육", cat: "corp", role: "기술튜터" },
-  { date: "26.05", org: "조선일보", topic: "리더십 대상 PBL 교육", cat: "corp", role: "강사" },
-  { date: "26.05~06", org: "포스코인터내셔널", topic: "26년 바이브코딩 교육 초급 과정(영업 포함)", cat: "corp", role: "기술튜터" },
-  { date: "26.04~06", org: "포스코인터내셔널", topic: "26년 바이브코딩 교육 중급 과정", cat: "corp", role: "강사·기술튜터" },
-  { date: "26.04~05", org: "신세계DF", topic: "라이브 스트리밍 Gemini 활용 강의(초·중급)", cat: "corp", role: "강사" },
-  { date: "26.04", org: "에스씨케이", topic: "이미지·영상 생성 및 바이브코딩 교육", cat: "corp", role: "기술튜터" },
-  { date: "26.04", org: "리얼게인", topic: "생성형 AI 리터러시 교육", cat: "corp", role: "기술튜터" },
-  { date: "26.03~04", org: "포스코그룹", topic: "AI 활용 전문가 과정", cat: "corp", role: "기술튜터·멘토" },
-  { date: "26.03", org: "롯데지주", topic: "임원 AI 과정", cat: "corp", role: "기술튜터" },
-  { date: "26.03", org: "현대카드", topic: "승진자 대상 바이브코딩 교육", cat: "corp", role: "기술튜터" },
-  { date: "26.03", org: "셀트리온제약", topic: "생성형 AI 교육", cat: "corp", role: "기술튜터" },
-  { date: "26.03", org: "모트렉스", topic: "개발자 대상 Cursor AI 교육", cat: "corp", role: "기술튜터" },
-  { date: "26.03", org: "HDC 아이파크몰", topic: "생성형 AI 툴 교육", cat: "corp", role: "기술튜터" },
-  { date: "26.01", org: "DORO", topic: "금천구청 AI 로봇 캠프 강의", cat: "corp", role: "보조강사" },
-  { date: "25.12", org: "디딤돌 법무사무소", topic: "Gemini & NotebookLM 기능 소개 및 활용법", cat: "corp", role: "AI 활용 교육" },
-  { date: "26.06", org: "삼성 AI Citizen", topic: "교육 교안 작업", cat: "plan", role: "교안 작업" },
-  { date: "26.06", org: "삼성전자", topic: "보직자 대상 AI 교육 교안 작업", cat: "plan", role: "교안 작업" },
-  { date: "26.06", org: "한국지역난방공사", topic: "AI Pioneer 강의 교안 제작", cat: "plan", role: "교안 작업" },
-  { date: "26.05", org: "삼성인력개발원", topic: "임원 AX 교육 교안 제작 / 대시보드 구성", cat: "plan", role: "교안 설계" },
-  { date: "26.05", org: "조선일보", topic: "리더십 대상 PBL 교육 교안 작업", cat: "plan", role: "교안 작업" },
-  { date: "26.05", org: "녹십자홀딩스", topic: "준법지원실 대상 커리큘럼 작성", cat: "plan", role: "커리큘럼" },
-  { date: "26.04~05", org: "타임폴리오", topic: "교육 교안 작업", cat: "plan", role: "교안 작업" },
-  { date: "26.04~05", org: "포스코인터내셔널", topic: "바이브코딩 교육 교안 작업", cat: "plan", role: "교안 작업" },
-  { date: "26.04", org: "한국투자증권", topic: "PB/WM 대상 AI 활용 교안 작업", cat: "plan", role: "교안 작업" },
-  { date: "26.04", org: "농심", topic: "AI 교육 교안 작업", cat: "plan", role: "교안 작업" },
-  { date: "26.03~04", org: "HD현대 / HD현대중공업", topic: "AI Frontier 양성 과정 교안 수정·초안", cat: "plan", role: "교안 작업" },
-  { date: "26.03", org: "코오롱", topic: "AI 교육 교안 제작", cat: "plan", role: "교안 설계" },
-  { date: "26.05~07", org: "조선일보", topic: "리더십 PBL 프로젝트 멘토링 및 최종 성과 공유회", cat: "mentor", role: "멘토링" },
-  { date: "26.05", org: "SKT", topic: "AI 기반 정책 Simulator 멘토링", cat: "mentor", role: "멘토링" },
-  { date: "26.05", org: "팀스파르타", topic: "강의 만족도 조사 뷰어 개발", cat: "mentor", role: "개발" },
-  { date: "26.03", org: "포스코그룹", topic: "미니프로젝트 안내", cat: "mentor", role: "멘토링" },
-  { date: "26.03", org: "포스코그룹", topic: "과제기획서 피드백", cat: "mentor", role: "피드백" },
-  { date: "26.03", org: "포스코그룹", topic: "수강생 멘토링", cat: "mentor", role: "멘토링" },
-  { date: "25.11", org: "SeSAC", topic: "선배 멘토 활동", cat: "mentor", role: "멘토링" },
-  { date: "26.04", org: "AI 강사 커뮤니티", topic: "AI 강사 네트워킹 / 교육 콘텐츠 사례 공유", cat: "tutor", role: "참여" },
-  { date: "26.04", org: "특강", topic: "“AI가 잘할 수밖에 없도록 일을 맡기는 방법”", cat: "tutor", role: "강사" },
-  { date: "26.03", org: "Peaches", topic: "OpenClaw 설치 및 인스타 자동화 프로그램 설계", cat: "tutor", role: "컨설팅" },
-  { date: "26.03", org: "렌탈클리닉", topic: "AI 활용 과외 / Claude Cowork·업무 자동화 설계", cat: "tutor", role: "과외" },
-  { date: "26.02", org: "개인 과외", topic: "OpenClaw 세팅", cat: "tutor", role: "과외" },
-  { date: "26.02", org: "개인 과외", topic: "바이브코딩 과외", cat: "tutor", role: "과외" },
-  { date: "26.01", org: "개인 컨설팅", topic: "취업 컨설팅", cat: "tutor", role: "컨설팅" },
-  { date: "26.01", org: "개인 과외", topic: "아이패드·노션 과외", cat: "tutor", role: "과외" },
-  { date: "26.01", org: "개인 과외", topic: "바이브코딩 과외", cat: "tutor", role: "과외" },
-]
-
-export type BadgeTone = "brand" | "tech" | "default" | "secondary" | "outline"
-
-export function roleBadgeVariant(role: string): BadgeTone {
-  if (role.includes("강사")) return "brand"
-  if (role.includes("튜터")) return "tech"
-  if (role.includes("교안") || role.includes("커리큘럼") || role.includes("설계")) return "default"
-  if (role.includes("멘토") || role.includes("피드백") || role.includes("컨설팅")) return "secondary"
-  return "outline"
+function formatActivityPeriod(dates: string[]): string {
+  const first = dates[0].slice(2, 7).replace("-", ".")
+  const last = dates[dates.length - 1].slice(2, 7).replace("-", ".")
+  if (first === last) return first
+  return `${first}~${first.slice(0, 2) === last.slice(0, 2) ? last.slice(3) : last}`
 }
+
+// Only curated work records are shipped; personal events and calendar IDs
+// are excluded. Multiple work blocks for the same activity/day are combined.
+const recordedActivities: Activity[] = (
+  calendarActivities as unknown as Omit<Activity, "date" | "lastDate">[]
+)
+  .map((activity) => ({
+    ...activity,
+    date: formatActivityPeriod(activity.dates),
+    lastDate: activity.dates[activity.dates.length - 1],
+  }))
+  .sort(
+    (a, b) => b.lastDate.localeCompare(a.lastDate) || a.id.localeCompare(b.id)
+  )
+
+export const activities = recordedActivities
+
+export type CurriculumItem = { id: string; org: string; topic: string }
+export const curriculumActivities: CurriculumItem[] = calendarCurriculum
 
 export type Project = {
   period: string
   title: string
   org: string
+  image: string
   award?: string
 }
 
 export const projects: Project[] = [
   {
+    period: "2026. 08 ~ 2026. 09",
+    title: "교육 운영 서비스",
+    image: "/projects/mini-pm.png",
+    org: "팀스파르타",
+  },
+  {
+    period: "2026. 08",
+    title: "AI 진단 챗봇",
+    image: "/projects/airex.png",
+    org: "포스코",
+  },
+  {
+    period: "2026. 07 ~ 2026. 08",
+    title: "AI 역량 진단 평가",
+    image: "/projects/ai-assessment.png",
+    org: "팀스파르타",
+  },
+  {
+    period: "2026. 05",
+    title: "강의 만족도 조사 뷰어",
+    image: "/projects/survey-viewer.png",
+    org: "팀스파르타",
+  },
+  {
     period: "2025. 07 ~ 2025. 09",
     title: "ERP 데이터 기반 AI Agent",
+    image: "/projects/erp-agent.png",
     org: "버티컬바",
   },
   {
     period: "2024. 09 ~ 2025. 02",
     title: "SeSAC 프로젝트 모집 웹사이트 / SeMO",
+    image: "/projects/semo.png",
     org: "SeSAC",
   },
   {
     period: "2023. 07 ~ 2024. 06",
     title: "객체 탐지 AI 개발",
+    image: "/projects/object-detection.png",
     org: "리버트론",
   },
-  { period: "2023. 05 ~ 2023. 07", title: "AI 로봇 개발", org: "리버트론" },
+  {
+    period: "2023. 05 ~ 2023. 07",
+    title: "AI 로봇 개발",
+    image: "/projects/ai-robot.png",
+    org: "리버트론",
+  },
   {
     period: "2022. 12 ~ 2023. 02",
     title: "이미지 편집 AI / 잘나왔닷",
+    image: "/projects/image-editing.png",
     org: "SKT FLY AI",
   },
   {
     period: "2022. 01 ~ 2022. 09",
     title: "AI 자동 수확 농업용 로봇",
+    image: "/projects/agricultural-robot.png",
     org: "한국대학발명협회",
     award: "대통령상",
   },
 ]
 
-export const heatmapMonths = ["2025.11", "12", "2026.01", "02", "03", "04", "05", "06", "07"]
+const DAY_MS = 24 * 60 * 60 * 1000
 
-export function buildHeatmap(weeks = 39): number[][] {
-  const cols: number[][] = []
-  for (let w = 0; w < weeks; w++) {
-    const col: number[] = []
-    for (let d = 0; d < 7; d++) {
-      const r = ((w * 31 + d * 7) % 11) / 10
-      const busy = w / (weeks - 1)
-      let lvl = Math.min(4, Math.round(busy * 2.6 + r * 1.8))
-      if (w < 6 && r < 0.55) lvl = Math.max(0, lvl - 2)
-      col.push(lvl)
-    }
-    cols.push(col)
-  }
-  return cols
+export type HeatmapDay = {
+  date: string
+  count: number
+  level: number
+  inPeriod: boolean
 }
 
-export const heatmapColors = ["#eceef0", "#c3c0ff", "#7671ff", "#4f46e5", "#0f0069"]
+export const activityDays = new Map<string, number>()
+for (const activity of activities) {
+  for (const date of new Set(activity.dates)) {
+    activityDays.set(date, (activityDays.get(date) ?? 0) + 1)
+  }
+}
+export const activityDayCount = activityDays.size
+export const activityMonthCount =
+  (Number(calendarUpdatedAt.slice(0, 4)) -
+    Number(activityStartDate.slice(0, 4))) *
+    12 +
+  Number(calendarUpdatedAt.slice(5, 7)) -
+  Number(activityStartDate.slice(5, 7)) +
+  1
+
+// Use UTC day arithmetic for date-only values so the graph is independent of
+// the deployment server's timezone. Calendar dates were read in Asia/Seoul.
+const periodStart = new Date(`${activityStartDate}T00:00:00Z`)
+const gridStart = periodStart.getTime() - periodStart.getUTCDay() * DAY_MS
+const periodEnd = new Date(`${calendarUpdatedAt}T00:00:00Z`).getTime()
+
+export function buildHeatmap(): HeatmapDay[][] {
+  const weeks = Math.ceil((periodEnd - gridStart + DAY_MS) / (7 * DAY_MS))
+  return Array.from({ length: weeks }, (_, week) =>
+    Array.from({ length: 7 }, (_, day) => {
+      const date = new Date(gridStart + (week * 7 + day) * DAY_MS)
+        .toISOString()
+        .slice(0, 10)
+      const count = activityDays.get(date) ?? 0
+      return {
+        date,
+        count,
+        level: Math.min(4, count),
+        inPeriod: date >= activityStartDate && date <= calendarUpdatedAt,
+      }
+    })
+  )
+}
+
+export const heatmapMonths = Array.from(
+  { length: activityMonthCount },
+  (_, index) => {
+    const month = new Date(
+      Date.UTC(
+        periodStart.getUTCFullYear(),
+        periodStart.getUTCMonth() + index,
+        1
+      )
+    )
+    return {
+      label:
+        month.getUTCMonth() === 0 || index === 0
+          ? `${month.getUTCFullYear()}.${String(month.getUTCMonth() + 1).padStart(2, "0")}`
+          : String(month.getUTCMonth() + 1).padStart(2, "0"),
+      week: Math.floor((month.getTime() - gridStart) / (7 * DAY_MS)),
+    }
+  }
+)
+
+export const heatmapColors = [
+  "#eceef0",
+  "#c3c0ff",
+  "#7671ff",
+  "#4f46e5",
+  "#0f0069",
+]

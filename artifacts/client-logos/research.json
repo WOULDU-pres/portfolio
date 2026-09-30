@@ -1,0 +1,226 @@
+{
+  "found": [
+    {
+      "name": "포스코그룹",
+      "file": "/clients/posco-group.png",
+      "sourcePage": "https://www.posco-inc.com/hs91a1-front/app/heritage/ci.html",
+      "assetUrl": "https://www.posco-inc.com/hs91a1-front/app/assets/download/heritage/ci/POSCO%20(English).png"
+    },
+    {
+      "name": "포스코홀딩스",
+      "file": "/clients/posco-holdings.png",
+      "sourcePage": "https://www.posco-inc.com/hs91a1-front/app/heritage/ci.html",
+      "assetUrl": "https://www.posco-inc.com/hs91a1-front/app/assets/download/heritage/ci/POSCO%20HOLDINGS%20(Korean).png"
+    },
+    {
+      "name": "포스코인터내셔널",
+      "file": "/clients/posco-international.png",
+      "sourcePage": "https://www.poscointl.com/ci",
+      "assetUrl": "https://www.poscointl.com/download/POSCO%20INTERNATIONAL%20(Korean).png?path=about"
+    },
+    {
+      "name": "포스코퓨처엠",
+      "file": "/clients/posco-future-m.png",
+      "sourcePage": "https://www.poscofuturem.com/introduce/ci.do",
+      "assetUrl": "https://www.poscofuturem.com/resources/file/poscofuturem_ci_ko.png"
+    },
+    {
+      "name": "현대카드",
+      "file": "/clients/hyundai-card.svg",
+      "sourcePage": "https://www.hyundaicard.com/cpf/ma/CPFMA0101_01.hc",
+      "assetUrl": "https://www.hyundaicard.com/docfiles/resources/pc/images/common/logo/logo_HC.svg"
+    },
+    {
+      "name": "삼성전자",
+      "file": "/clients/samsung-electronics.svg",
+      "sourcePage": "https://www.samsung.com/sec/",
+      "assetUrl": "inline SVG in page DOM (.logo svg); fill changed from currentColor to #000000"
+    },
+    {
+      "name": "카카오페이",
+      "file": "/clients/kakaopay.png",
+      "sourcePage": "https://partner.kakaopay.com/partner/online/guide/payment-method",
+      "assetUrl": "https://t1.daumcdn.net/kakaopay/partner/center/image/kakaopay_%EA%B2%B0%EC%A0%9C%EC%88%98%EB%8B%A8%EB%A1%9C%EA%B3%A0.zip (payment_icon_yellow_large.png)"
+    },
+    {
+      "name": "SKT",
+      "file": "/clients/skt.svg",
+      "sourcePage": "https://www.sktelecom.com/",
+      "assetUrl": "https://www.sktelecom.com/images/common/header-logo.svg"
+    },
+    {
+      "name": "한국지역난방공사",
+      "file": "/clients/kdhc.png",
+      "sourcePage": "https://www.kdhc.co.kr/kdhc/main/main.do",
+      "assetUrl": "https://www.kdhc.co.kr/static/kdhc/img/common/logo.png"
+    },
+    {
+      "name": "셀트리온제약",
+      "file": "/clients/celltrion-pharm.png",
+      "sourcePage": "https://www.celltrionph.com/ko-kr/aboutus/ci",
+      "assetUrl": "https://www.celltrionph.com/images/sub/about/ci_celltrion_ci.png"
+    },
+    {
+      "name": "신세계DF",
+      "file": "/clients/shinsegae-df.png",
+      "sourcePage": "https://www.shinsegaedf.com/store/kr/companyInfo",
+      "assetUrl": "https://img.ssgdfs.com/online_upload/store/resources/pc/images/common/logo-gnb.png"
+    },
+    {
+      "name": "조선일보",
+      "file": "/clients/chosun.svg",
+      "sourcePage": "https://www.chosun.com/",
+      "assetUrl": "inline SVG in header of https://www.chosun.com/ (a[aria-label=\"조선일보 로고\"] > svg)"
+    },
+    {
+      "name": "녹십자홀딩스",
+      "file": "/clients/gc-holdings.svg",
+      "sourcePage": "https://www.gccorp.com/kor/gc/ci",
+      "assetUrl": "https://www.gccorp.com/kor/image/logo.svg"
+    },
+    {
+      "name": "HD현대",
+      "file": "/clients/hd-hyundai.png",
+      "sourcePage": "https://www.hd.com/kr/brand-story/typeface/contents",
+      "assetUrl": "https://www.hd.com/common/kr/docs/CI_HD%ED%98%84%EB%8C%80_PNG.zip (CI_HD현대_753-198.png, 투명 PNG)"
+    },
+    {
+      "name": "농심",
+      "file": "/clients/nongshim.png",
+      "sourcePage": "https://www.nongshim.com/introduce/ci",
+      "assetUrl": "https://www.nongshim.com/resources2/images/view_introduce/ci/Signature_01.png"
+    },
+    {
+      "name": "코오롱",
+      "file": "/clients/kolon.svg",
+      "sourcePage": "https://www.kolon.com/kr/group/corporate-identity",
+      "assetUrl": "https://www.kolon.com/common/kr/images/ci-kolonintro-kor-01.svg"
+    },
+    {
+      "name": "타임폴리오",
+      "file": "/clients/timefolio.png",
+      "sourcePage": "https://www.timefolio.co.kr/",
+      "assetUrl": "https://www.timefolio.co.kr/images/common/logo2.png"
+    },
+    {
+      "name": "HDC 아이파크몰",
+      "file": "/clients/hdc-iparkmall.png",
+      "sourcePage": "https://www.hdc-iparkmall.com/main/index.do",
+      "assetUrl": "https://www.hdc-iparkmall.com/resources/img/com/logo-on.png?v=2026040103"
+    },
+    {
+      "name": "롯데월드",
+      "file": "/clients/lotteworld.svg",
+      "sourcePage": "https://adventure.lotteworld.com/",
+      "assetUrl": "https://adventure.lotteworld.com/assets/footerLogo-BwqZGQTA.svg"
+    },
+    {
+      "name": "모트렉스",
+      "file": "/clients/motrex.png",
+      "sourcePage": "https://www.motrex.co.kr/",
+      "assetUrl": "https://www.motrex.co.kr/images/common/logo-c.png"
+    },
+    {
+      "name": "리얼게인",
+      "file": "/clients/realgain.png",
+      "sourcePage": "http://www.realgain.co.kr/kor/company/company.php",
+      "assetUrl": "http://www.realgain.co.kr/kor/images/common/logo_c.png"
+    },
+    {
+      "name": "정식품",
+      "file": "/clients/jungsikpum.png",
+      "sourcePage": "https://www.vegemil.co.kr/",
+      "assetUrl": "https://image.edaymall.com/images/dcf/vegemil/img/ico/logo.png"
+    },
+    {
+      "name": "롯데지주",
+      "file": "/clients/lotte.svg",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Lotte_Logo_(2017).svg",
+      "assetUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Lotte_Logo_(2017).svg",
+      "scope": "timeline"
+    },
+    {
+      "name": "SeSAC",
+      "file": "/clients/sesac.png",
+      "sourcePage": "https://sesac.seoul.kr/sesac/main/main.do",
+      "assetUrl": "https://sesac.seoul.kr/static/img/common/logo.png",
+      "scope": "timeline"
+    },
+    {
+      "name": "SK E&S",
+      "file": "/clients/sk-ens.svg",
+      "sourcePage": "https://www.skens.com/sk/main/index.do",
+      "assetUrl": "https://www.skens.com/renewal/images/common/logo-skens-b.svg",
+      "scope": "timeline"
+    },
+    {
+      "name": "Peaches",
+      "file": "/clients/peaches.png",
+      "sourcePage": "https://peachesoneuniverse.com/",
+      "assetUrl": "https://peachesoneuniverse.com/web/logo/2024_logo_white.png",
+      "scope": "timeline",
+      "note": "흰색 원본을 #111로 재색상"
+    },
+    {
+      "name": "렌탈클리닉",
+      "file": "/clients/rentalclinic.png",
+      "sourcePage": "https://rentalclinic.co.kr/",
+      "assetUrl": "https://rentalclinic.co.kr/imageserver/origin/100/img/cooperate/logo/%EB%A0%8C%ED%83%88%ED%81%B4%EB%A6%AC%EB%8B%891.png",
+      "scope": "timeline"
+    },
+    {
+      "name": "팀스파르타",
+      "file": "/clients/teamsparta.png",
+      "sourcePage": "https://career.spartaclub.kr/ko/home",
+      "assetUrl": "https://opening-attachments.greetinghr.com/2025-09-18/5f7aa285-b072-41af-95a4-f698d673f089/LOGOTeamSparta_Basic.png",
+      "scope": "timeline"
+    },
+    {
+      "name": "한국투자증권",
+      "file": "/clients/koreainvestment.svg",
+      "sourcePage": "https://securities.koreainvestment.com/main/Main.jsp",
+      "assetUrl": "https://securities.koreainvestment.com/inc_renewal/img/main/gnb_logo.svg",
+      "scope": "timeline"
+    },
+    {
+      "name": "KITECH",
+      "file": "/clients/kitech.svg",
+      "sourcePage": "https://www.kitech.re.kr/",
+      "assetUrl": "https://www.kitech.re.kr/images/common/logo.svg",
+      "scope": "timeline"
+    },
+    {
+      "name": "에스씨케이",
+      "file": "/clients/sck.png",
+      "sourcePage": "https://www.sckcorp.co.kr/",
+      "assetUrl": "https://www.sckcorp.co.kr/sck_logo_black.png",
+      "scope": "timeline"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "SK E&S",
+      "reason": "skens.com(공식)은 현재 \"SK이노베이션 E&S\"로 개편되어 \"SK E&S\" 명칭의 공식 로고는 확인되지 않음. 브랜드 페이지(https://www.skens.com/sk/content/view.do?cate=company&m1=brand&tab=1)에는 SK이노베이션 E&S 로고 PNG만 있고(예: /renewal/images/sub/logo-sk-inno-kr.png) 다운로드 안 함. 필요 시 별도 판단."
+    },
+    {
+      "name": "삼성인력개발원",
+      "reason": "공식 사이트(hrd.samsung.co.kr, samsunghrd.co.kr) 접속 불가, 고유 공식 로고 파일 미확인. 삼성전자 로고 대체 사용 안 함."
+    },
+    {
+      "name": "한국투자증권",
+      "reason": "다운로드한 헤더 파일이 로고 없는 어두운 영역으로 보여 시각 검수에서 제외."
+    },
+    {
+      "name": "에스씨케이",
+      "reason": "후보 sckcorp.co.kr(에쓰씨케이, IT 유통)과 스타벅스 운영사 에스씨케이컴퍼니 중 어느 회사인지 특정 불가. 또한 홈페이지 상단 로고는 흰색 반전 버전이며 검정 워드마크(sck_logo_black.png)만 있어 동명이인 확인 불가로 skip"
+    },
+    {
+      "name": "오쎄",
+      "reason": "공식 사이트 osse.co.kr 확인했으나 사이트 로고(logo_main.png, logo_white.png)가 모두 흰색 반전 로고라 흰 배경에서 보이지 않아 skip"
+    },
+    {
+      "name": "롯데지주",
+      "reason": "공식 CI 페이지의 받은 이미지는 여러 로고타입을 나열한 안내용 합성 이미지였고, 공식 헤더 이미지는 흰색 반전 로고 스프라이트여서 개별 로고로 표시하기 적절하지 않아 제외."
+    }
+  ]
+}

@@ -1,0 +1,194 @@
+{
+  "url": "http://localhost:3107",
+  "records": 48,
+  "curriculum": 16,
+  "uniqueDays": 122,
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1000,
+      "filters": "passed",
+      "carousel": "passed",
+      "profileGraph": "passed",
+      "noOverflow": true,
+      "images": [
+        {
+          "alt": "MINI PM 교육 운영 서비스",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "AIREX 프로젝트",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "AI 역량 진단 평가",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "강의 만족도 조사 뷰어",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "ERP 데이터 기반 AI Agent",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "SeSAC 프로젝트 모집 웹사이트 / SeMO",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "객체 탐지 AI 개발",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "AI 로봇 개발",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "이미지 편집 AI / 잘나왔닷",
+          "complete": true,
+          "width": 256
+        },
+        {
+          "alt": "AI 자동 수확 농업용 로봇",
+          "complete": true,
+          "width": 256
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "filters": "passed",
+      "carousel": "passed",
+      "profileGraph": "passed",
+      "noOverflow": true,
+      "images": [
+        {
+          "alt": "MINI PM 교육 운영 서비스",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "AIREX 프로젝트",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "AI 역량 진단 평가",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "강의 만족도 조사 뷰어",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "ERP 데이터 기반 AI Agent",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "SeSAC 프로젝트 모집 웹사이트 / SeMO",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "객체 탐지 AI 개발",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "AI 로봇 개발",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "이미지 편집 AI / 잘나왔닷",
+          "complete": true,
+          "width": 223
+        },
+        {
+          "alt": "AI 자동 수확 농업용 로봇",
+          "complete": true,
+          "width": 223
+        }
+      ],
+      "pageErrors": []
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "filters": "passed",
+      "carousel": "passed",
+      "profileGraph": "passed",
+      "noOverflow": true,
+      "images": [
+        {
+          "alt": "MINI PM 교육 운영 서비스",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "AIREX 프로젝트",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "AI 역량 진단 평가",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "강의 만족도 조사 뷰어",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "ERP 데이터 기반 AI Agent",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "SeSAC 프로젝트 모집 웹사이트 / SeMO",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "객체 탐지 AI 개발",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "AI 로봇 개발",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "이미지 편집 AI / 잘나왔닷",
+          "complete": true,
+          "width": 176
+        },
+        {
+          "alt": "AI 자동 수확 농업용 로봇",
+          "complete": true,
+          "width": 176
+        }
+      ],
+      "pageErrors": []
+    }
+  ]
+}

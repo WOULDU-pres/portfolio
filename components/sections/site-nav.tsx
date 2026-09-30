@@ -1,11 +1,7 @@
-import { Button } from "@/components/ui/button"
-
 const links = [
-  ["#strengths", "강점"],
-  ["#experience", "활동 이력"],
-  ["#activity", "활동 그래프"],
+  ["#education", "교육 종류"],
+  ["#experience", "교육 이력"],
   ["#projects", "프로젝트"],
-  ["#contact", "문의"],
 ] as const
 
 export function SiteNav() {
@@ -26,9 +22,6 @@ export function SiteNav() {
             </a>
           ))}
         </div>
-        <Button asChild variant="brand" size="sm">
-          <a href="#contact">강의 문의</a>
-        </Button>
       </nav>
     </header>
   )

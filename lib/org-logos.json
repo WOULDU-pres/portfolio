@@ -1,0 +1,50 @@
+[
+  {
+    "name": "롯데지주",
+    "logo": "/clients/lotte.svg"
+  },
+  {
+    "name": "SeSAC",
+    "logo": "/clients/sesac.png"
+  },
+  {
+    "name": "SK E&S",
+    "logo": "/clients/sk-ens.svg"
+  },
+  {
+    "name": "Peaches",
+    "logo": "/clients/peaches.png"
+  },
+  {
+    "name": "렌탈클리닉",
+    "logo": "/clients/rentalclinic.png"
+  },
+  {
+    "name": "팀스파르타",
+    "logo": "/clients/teamsparta.png"
+  },
+  {
+    "name": "한국투자증권",
+    "logo": "/clients/koreainvestment.svg"
+  },
+  {
+    "name": "KITECH",
+    "logo": "/clients/kitech.svg"
+  },
+  {
+    "name": "HD현대 / HD현대중공업",
+    "logo": "/clients/hd-hyundai.png"
+  },
+  {
+    "name": "삼성",
+    "logo": "/clients/samsung-electronics.svg"
+  },
+  {
+    "name": "삼성 AI Citizen",
+    "logo": "/clients/samsung-electronics.svg"
+  },
+  {
+    "name": "에스씨케이",
+    "logo": "/clients/sck.png"
+  }
+]

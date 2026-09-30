@@ -21,8 +21,8 @@ export function Strengths() {
       <div className="mb-10">
         <h2 className="text-3xl font-bold tracking-tight">강점 세 가지</h2>
         <p className="mt-3 max-w-xl text-muted-foreground">
-          단순 강의가 아니라, 기업별 맞춤 설계 → 실습형 운영 → 교안·멘토링까지 한 흐름으로
-          연결합니다.
+          단순 강의가 아니라, 기업별 맞춤 설계 → 실습형 운영 → 교안·멘토링까지
+          한 흐름으로 연결합니다.
         </p>
       </div>
       <div className="grid gap-6 md:grid-cols-3">

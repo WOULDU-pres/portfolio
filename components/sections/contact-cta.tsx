@@ -11,8 +11,8 @@ export function ContactCta() {
           우리 회사 AI 교육, 어디서부터 시작할까요?
         </h2>
         <p className="relative mx-auto mt-4 max-w-xl text-lg text-primary-foreground/80">
-          강의 · 교안 설계 · 기술 튜터링 · 멘토링까지. 필요한 범위를 알려주시면 맞춤으로
-          제안드립니다.
+          강의 · 교안 설계 · 기술 튜터링 · 멘토링까지. 필요한 범위를 알려주시면
+          맞춤으로 제안드립니다.
         </p>
         <div className="relative mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <Button asChild variant="brand" className="h-11 px-7">

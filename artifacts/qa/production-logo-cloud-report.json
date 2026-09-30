@@ -1,0 +1,92 @@
+{
+  "url": "https://portfolio-hwjoo.vercel.app",
+  "viewports": [
+    {
+      "name": "desktop",
+      "title": "Companies I’ve worked with",
+      "fontSize": 12,
+      "originalLogos": 22,
+      "imagesLoaded": true,
+      "movesLeft": true,
+      "continuesOnHover": true,
+      "animation": {
+        "name": "logo-cloud-scroll",
+        "duration": "88s",
+        "iterations": "infinite",
+        "timing": "linear",
+        "groups": [
+          4928,
+          4928
+        ],
+        "width": 9856
+      },
+      "seamlessLoopDeltaPx": 0.1121826171875,
+      "graphWidth": 1103.984375,
+      "introExact": true,
+      "removedHeroButtons": true,
+      "noHorizontalOverflow": true,
+      "bottomSection": true
+    },
+    {
+      "name": "tablet",
+      "title": "Companies I’ve worked with",
+      "fontSize": 12,
+      "originalLogos": 22,
+      "imagesLoaded": true,
+      "movesLeft": true,
+      "continuesOnHover": true,
+      "animation": {
+        "name": "logo-cloud-scroll",
+        "duration": "88s",
+        "iterations": "infinite",
+        "timing": "linear",
+        "groups": [
+          4928,
+          4928.00048828125
+        ],
+        "width": 9856
+      },
+      "seamlessLoopDeltaPx": 0.1121826171875,
+      "graphWidth": 720,
+      "introExact": true,
+      "removedHeroButtons": true,
+      "noHorizontalOverflow": true,
+      "bottomSection": true
+    },
+    {
+      "name": "mobile",
+      "title": "Companies I’ve worked with",
+      "fontSize": 12,
+      "originalLogos": 22,
+      "imagesLoaded": true,
+      "movesLeft": true,
+      "continuesOnHover": true,
+      "animation": {
+        "name": "logo-cloud-scroll",
+        "duration": "88s",
+        "iterations": "infinite",
+        "timing": "linear",
+        "groups": [
+          3872,
+          3871.999755859375
+        ],
+        "width": 7744
+      },
+      "seamlessLoopDeltaPx": 0.08795166015625,
+      "graphWidth": 342,
+      "introExact": true,
+      "removedHeroButtons": true,
+      "noHorizontalOverflow": true,
+      "bottomSection": true
+    },
+    {
+      "name": "reduced-motion",
+      "animationDisabled": true,
+      "duplicateHidden": true,
+      "manualScroll": {
+        "overflow": "auto",
+        "scrollLeft": 300
+      }
+    }
+  ]
+}

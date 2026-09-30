@@ -1,0 +1,90 @@
+[
+  {
+    "name": "포스코그룹",
+    "logo": "/clients/posco-group.png"
+  },
+  {
+    "name": "포스코인터내셔널",
+    "logo": "/clients/posco-international.png"
+  },
+  {
+    "name": "현대카드",
+    "logo": "/clients/hyundai-card.svg"
+  },
+  {
+    "name": "삼성전자",
+    "logo": "/clients/samsung-electronics.svg"
+  },
+  {
+    "name": "한국지역난방공사",
+    "logo": "/clients/kdhc.png"
+  },
+  {
+    "name": "카카오페이",
+    "logo": "/clients/kakaopay.png"
+  },
+  {
+    "name": "셀트리온제약",
+    "logo": "/clients/celltrion-pharm.png"
+  },
+  {
+    "name": "신세계DF",
+    "logo": "/clients/shinsegae-df.png"
+  },
+  {
+    "name": "조선일보",
+    "logo": "/clients/chosun.svg"
+  },
+  {
+    "name": "녹십자홀딩스",
+    "logo": "/clients/gc-holdings.svg"
+  },
+  {
+    "name": "SKT",
+    "logo": "/clients/skt.svg"
+  },
+  {
+    "name": "HD현대",
+    "logo": "/clients/hd-hyundai.png"
+  },
+  {
+    "name": "농심",
+    "logo": "/clients/nongshim.png"
+  },
+  {
+    "name": "코오롱",
+    "logo": "/clients/kolon.svg"
+  },
+  {
+    "name": "타임폴리오",
+    "logo": "/clients/timefolio.png"
+  },
+  {
+    "name": "HDC 아이파크몰",
+    "logo": "/clients/hdc-iparkmall.png"
+  },
+  {
+    "name": "모트렉스",
+    "logo": "/clients/motrex.png"
+  },
+  {
+    "name": "리얼게인",
+    "logo": "/clients/realgain.png"
+  },
+  {
+    "name": "롯데월드",
+    "logo": "/clients/lotteworld.svg"
+  },
+  {
+    "name": "정식품",
+    "logo": "/clients/jungsikpum.png"
+  },
+  {
+    "name": "포스코퓨처엠",
+    "logo": "/clients/posco-future-m.png"
+  },
+  {
+    "name": "포스코홀딩스",
+    "logo": "/clients/posco-holdings.png"
+  }
+]

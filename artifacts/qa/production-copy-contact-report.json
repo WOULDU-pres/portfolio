@@ -1,0 +1,50 @@
+{
+  "url": "https://portfolio-hwjoo.vercel.app",
+  "report": [
+    {
+      "name": "desktop",
+      "titleUpdated": true,
+      "titleLines": 3,
+      "headerInquiryButtonRemoved": true,
+      "introCopyPreserved": true,
+      "explicitBreaks": 2,
+      "phone": "010-5246-5778",
+      "email": "jhw102258@gmail.com",
+      "contactsBelowIntro": true,
+      "linksCorrect": true,
+      "projectCaptionsRemoved": true,
+      "carouselNextWorks": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "name": "mobile",
+      "titleUpdated": true,
+      "titleLines": 3,
+      "headerInquiryButtonRemoved": true,
+      "introCopyPreserved": true,
+      "explicitBreaks": 2,
+      "phone": "010-5246-5778",
+      "email": "jhw102258@gmail.com",
+      "contactsBelowIntro": true,
+      "linksCorrect": true,
+      "projectCaptionsRemoved": true,
+      "carouselNextWorks": true,
+      "noHorizontalOverflow": true
+    },
+    {
+      "name": "narrow-mobile",
+      "titleUpdated": true,
+      "titleLines": 3,
+      "headerInquiryButtonRemoved": true,
+      "introCopyPreserved": true,
+      "explicitBreaks": 2,
+      "phone": "010-5246-5778",
+      "email": "jhw102258@gmail.com",
+      "contactsBelowIntro": true,
+      "linksCorrect": true,
+      "projectCaptionsRemoved": true,
+      "carouselNextWorks": true,
+      "noHorizontalOverflow": true
+    }
+  ]
+}

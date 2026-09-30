@@ -1,0 +1,222 @@
+[
+  {
+    "name": "포스코그룹",
+    "file": "/clients/posco-group.png",
+    "format": "png",
+    "width": 1605,
+    "height": 460,
+    "bytes": 24897,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "포스코인터내셔널",
+    "file": "/clients/posco-international.png",
+    "format": "png",
+    "width": 6310,
+    "height": 1900,
+    "bytes": 99343,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "현대카드",
+    "file": "/clients/hyundai-card.svg",
+    "format": "svg",
+    "width": 133,
+    "height": 26,
+    "bytes": 7882,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "삼성전자",
+    "file": "/clients/samsung-electronics.svg",
+    "format": "svg",
+    "width": 120,
+    "height": 19,
+    "bytes": 2207,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "한국지역난방공사",
+    "file": "/clients/kdhc.png",
+    "format": "png",
+    "width": 247,
+    "height": 31,
+    "bytes": 2412,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "카카오페이",
+    "file": "/clients/kakaopay.png",
+    "format": "png",
+    "width": 241,
+    "height": 100,
+    "bytes": 3746,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "셀트리온제약",
+    "file": "/clients/celltrion-pharm.png",
+    "format": "png",
+    "width": 558,
+    "height": 143,
+    "bytes": 12942,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "신세계DF",
+    "file": "/clients/shinsegae-df.png",
+    "format": "png",
+    "width": 134,
+    "height": 30,
+    "bytes": 1071,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "조선일보",
+    "file": "/clients/chosun.svg",
+    "format": "svg",
+    "width": 294,
+    "height": 60,
+    "bytes": 13990,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "녹십자홀딩스",
+    "file": "/clients/gc-holdings.svg",
+    "format": "svg",
+    "width": 106,
+    "height": 46,
+    "bytes": 18948,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "SKT",
+    "file": "/clients/skt.svg",
+    "format": "svg",
+    "width": 92,
+    "height": 37,
+    "bytes": 6478,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "HD현대",
+    "file": "/clients/hd-hyundai.png",
+    "format": "png",
+    "width": 753,
+    "height": 198,
+    "bytes": 8497,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "농심",
+    "file": "/clients/nongshim.png",
+    "format": "png",
+    "width": 190,
+    "height": 60,
+    "bytes": 2958,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "코오롱",
+    "file": "/clients/kolon.svg",
+    "format": "svg",
+    "width": 228,
+    "height": 55,
+    "bytes": 1871,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "타임폴리오",
+    "file": "/clients/timefolio.png",
+    "format": "png",
+    "width": 197,
+    "height": 36,
+    "bytes": 5314,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "HDC 아이파크몰",
+    "file": "/clients/hdc-iparkmall.png",
+    "format": "png",
+    "width": 158,
+    "height": 22,
+    "bytes": 1466,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "모트렉스",
+    "file": "/clients/motrex.png",
+    "format": "png",
+    "width": 256,
+    "height": 56,
+    "bytes": 6008,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "리얼게인",
+    "file": "/clients/realgain.png",
+    "format": "png",
+    "width": 93,
+    "height": 60,
+    "bytes": 3704,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "롯데월드",
+    "file": "/clients/lotteworld.svg",
+    "format": "svg",
+    "width": 140,
+    "height": 32,
+    "bytes": 8999,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "정식품",
+    "file": "/clients/jungsikpum.png",
+    "format": "png",
+    "width": 86,
+    "height": 50,
+    "bytes": 4318,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "포스코퓨처엠",
+    "file": "/clients/posco-future-m.png",
+    "format": "png",
+    "width": 4780,
+    "height": 1900,
+    "bytes": 84648,
+    "valid": true,
+    "visibleOnWhite": true
+  },
+  {
+    "name": "포스코홀딩스",
+    "file": "/clients/posco-holdings.png",
+    "format": "png",
+    "width": 4775,
+    "height": 880,
+    "bytes": 39134,
+    "valid": true,
+    "visibleOnWhite": true
+  }
+]

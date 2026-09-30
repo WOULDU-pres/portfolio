@@ -15,7 +15,7 @@ const fontMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "주현우 — 기업 AI 교육 강사 포트폴리오",
   description:
-    "포스코그룹·현대카드·삼성인력개발원 등 20여 곳에서 생성형 AI·바이브코딩 교육을 진행한 기업 AI 교육 강사 · 교안 설계자 · 기술 튜터 · 멘토.",
+    "기업 AI 교육과 프로젝트 멘토링. AI 리터러시·바이브코딩·업무 자동화·데이터 분석·머신러닝·LLM·RAG 교육, 교안·커리큘럼 제작 및 AI·웹 서비스 개발.",
 }
 
 export default function RootLayout({
@@ -27,7 +27,12 @@ export default function RootLayout({
     <html
       lang="ko"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
+      className={cn(
+        "antialiased",
+        fontMono.variable,
+        "font-sans",
+        geist.variable
+      )}
     >
       <body>
         <ThemeProvider defaultTheme="light" enableSystem={false}>

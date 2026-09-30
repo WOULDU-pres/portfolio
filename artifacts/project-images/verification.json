@@ -1,0 +1,92 @@
+[
+  {
+    "valid": true,
+    "path": "public/projects/agricultural-robot.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2131543,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/ai-assessment.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2136897,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/ai-robot.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 1942065,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/airex.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2075765,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/erp-agent.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 1971047,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/image-editing.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2192806,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/mini-pm.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2093590,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/object-detection.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 1868025,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/semo.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2197326,
+    "ratio": 0.6666666666666666
+  },
+  {
+    "valid": true,
+    "path": "public/projects/survey-viewer.png",
+    "format": "png",
+    "width": 1024,
+    "height": 1536,
+    "bytes": 2295134,
+    "ratio": 0.6666666666666666
+  }
+]

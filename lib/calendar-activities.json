@@ -1,0 +1,353 @@
+[
+  {
+    "id": "corp-samsung",
+    "org": "삼성전자",
+    "topic": "전략마케팅팀 대상 AI 교육",
+    "cat": "education",
+    "dates": ["2026-06-17"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "heating-ai-pioneer",
+    "org": "한국지역난방공사",
+    "topic": "AI Pioneer",
+    "cat": "education",
+    "dates": [
+      "2026-05-27",
+      "2026-06-08",
+      "2026-06-09",
+      "2026-06-22",
+      "2026-06-23",
+      "2026-07-07",
+      "2026-07-08",
+      "2026-07-21",
+      "2026-07-22",
+      "2026-08-03",
+      "2026-08-04",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-21",
+      "2026-09-22"
+    ],
+    "types": ["literacy", "vibe", "data", "llm", "mentoring"]
+  },
+  {
+    "id": "corp-gc",
+    "org": "녹십자홀딩스",
+    "topic": "AI 교육",
+    "cat": "education",
+    "dates": ["2026-05-21", "2026-05-26", "2026-06-01", "2026-06-18"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-kakaopay",
+    "org": "카카오페이",
+    "topic": "중간 리더 교육",
+    "cat": "education",
+    "dates": ["2026-05-19"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-chosun",
+    "org": "조선일보",
+    "topic": "리더십 대상 PBL 교육",
+    "cat": "education",
+    "dates": ["2026-05-13", "2026-05-14"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-posco-beginner",
+    "org": "포스코인터내셔널",
+    "topic": "바이브코딩 초급",
+    "cat": "education",
+    "dates": ["2026-05-18", "2026-06-02"],
+    "types": ["vibe"]
+  },
+  {
+    "id": "corp-posco-intermediate",
+    "org": "포스코인터내셔널",
+    "topic": "바이브코딩 중급",
+    "cat": "education",
+    "dates": [
+      "2026-04-29",
+      "2026-04-30",
+      "2026-05-06",
+      "2026-05-07",
+      "2026-06-29",
+      "2026-06-30",
+      "2026-09-29",
+      "2026-09-30"
+    ],
+    "types": ["vibe"]
+  },
+  {
+    "id": "corp-shinsegae",
+    "org": "신세계DF",
+    "topic": "라이브 스트리밍 생성형 AI 활용 강의(Gemini·Claude)",
+    "cat": "education",
+    "dates": ["2026-03-20", "2026-04-23", "2026-05-28"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-sck",
+    "org": "에스씨케이",
+    "topic": "이미지·영상 생성 및 바이브코딩 교육",
+    "cat": "education",
+    "dates": ["2026-04-20"],
+    "types": ["vibe"]
+  },
+  {
+    "id": "corp-realgain",
+    "org": "리얼게인",
+    "topic": "생성형 AI 리터러시 교육",
+    "cat": "education",
+    "dates": ["2026-04-24"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-posco-group",
+    "org": "포스코그룹",
+    "topic": "AI 활용 전문가 과정",
+    "cat": "education",
+    "dates": [
+      "2026-03-10",
+      "2026-03-14",
+      "2026-03-15",
+      "2026-03-16",
+      "2026-03-23",
+      "2026-03-24",
+      "2026-03-25",
+      "2026-03-26",
+      "2026-03-27",
+      "2026-03-30",
+      "2026-03-31",
+      "2026-04-01",
+      "2026-04-02",
+      "2026-04-03",
+      "2026-04-06",
+      "2026-04-07",
+      "2026-04-08",
+      "2026-04-09",
+      "2026-04-10",
+      "2026-04-13",
+      "2026-04-14",
+      "2026-04-15",
+      "2026-04-16",
+      "2026-04-17"
+    ],
+    "types": ["literacy", "vibe", "data", "llm", "mentoring"],
+    "projects": [
+      "원료 일일 수급 동향 대시보드 개발",
+      "포스코 홈페이지 문의 자동 분류 및 대응 Agent 구축",
+      "직원 경조사 경험설계(EX) Agent 개발",
+      "WX 교육 출결·관리 시스템"
+    ]
+  },
+  {
+    "id": "corp-lotte-holding",
+    "org": "롯데지주",
+    "topic": "임원 AI 과정",
+    "cat": "education",
+    "dates": ["2026-03-14"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-hyundai",
+    "org": "현대카드",
+    "topic": "승진자 대상 바이브코딩 교육",
+    "cat": "education",
+    "dates": ["2026-03-12"],
+    "types": ["vibe"]
+  },
+  {
+    "id": "corp-celltrion",
+    "org": "셀트리온제약",
+    "topic": "생성형 AI 교육",
+    "cat": "education",
+    "dates": ["2026-03-09"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-motrex",
+    "org": "모트렉스",
+    "topic": "개발자 대상 Cursor AI 교육",
+    "cat": "education",
+    "dates": ["2026-03-05", "2026-03-19"],
+    "types": ["vibe"]
+  },
+  {
+    "id": "corp-hdc",
+    "org": "HDC 아이파크몰",
+    "topic": "생성형 AI 툴 교육",
+    "cat": "education",
+    "dates": ["2026-03-03", "2026-03-10"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-doro",
+    "org": "DORO",
+    "topic": "금천구청 AI 로봇 캠프 강의",
+    "cat": "education",
+    "dates": ["2026-01-19"],
+    "types": []
+  },
+  {
+    "id": "corp-law-office",
+    "org": "디딤돌 법무사무소",
+    "topic": "Gemini & NotebookLM 기능 소개 및 활용법",
+    "cat": "education",
+    "dates": ["2025-12-07"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-lotte-world",
+    "org": "롯데월드",
+    "topic": "서울사업장 하반기 팀원 교육: ChatGPT Work",
+    "cat": "education",
+    "dates": ["2026-09-01", "2026-09-02"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-posco-holdings",
+    "org": "포스코홀딩스",
+    "topic": "기업 교육",
+    "cat": "education",
+    "dates": ["2026-09-17"],
+    "types": []
+  },
+  {
+    "id": "corp-posco-futurem",
+    "org": "포스코퓨처엠",
+    "topic": "기업 교육",
+    "cat": "education",
+    "dates": ["2026-07-31"],
+    "types": []
+  },
+  {
+    "id": "corp-osse",
+    "org": "오쎄",
+    "topic": "생성형 AI 교육",
+    "cat": "education",
+    "dates": ["2026-07-23"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-jungfood",
+    "org": "정식품",
+    "topic": "생성형 AI 교육",
+    "cat": "education",
+    "dates": ["2026-07-14"],
+    "types": ["literacy"]
+  },
+  {
+    "id": "corp-posco-august",
+    "org": "포스코인터내셔널",
+    "topic": "AI 활용 전문가 과정",
+    "cat": "education",
+    "dates": [
+      "2026-07-13",
+      "2026-07-28",
+      "2026-07-29",
+      "2026-07-30",
+      "2026-08-05",
+      "2026-08-06",
+      "2026-08-07",
+      "2026-08-10",
+      "2026-08-11",
+      "2026-08-12",
+      "2026-08-13",
+      "2026-08-14",
+      "2026-08-18",
+      "2026-08-19",
+      "2026-08-20",
+      "2026-08-21",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28"
+    ],
+    "types": ["literacy", "vibe", "data", "llm", "mentoring"],
+    "projects": [
+      "재무 관리 대시보드",
+      "고객 문의 관리 앱",
+      "뉴스 데이터 관리 대시보드",
+      "보고서 자동화 앱"
+    ]
+  },
+  {
+    "id": "mentor-chosun",
+    "org": "조선일보",
+    "topic": "AI 프로젝트 멘토링",
+    "cat": "mentoring",
+    "dates": [
+      "2026-05-29",
+      "2026-06-05",
+      "2026-06-11",
+      "2026-06-19",
+      "2026-06-24",
+      "2026-06-25"
+    ],
+    "types": ["mentoring"],
+    "projects": [
+      "구글 생태계를 이용한 마케팅 효과 측정 자동화 및 고도화",
+      "조달청 나라장터 입찰 공고 목록 자동분류 시스템 구축"
+    ]
+  },
+  {
+    "id": "mentor-sesac",
+    "org": "SeSAC",
+    "topic": "새싹 선배 취업 멘토링",
+    "cat": "mentoring",
+    "dates": ["2025-11-11"],
+    "types": ["mentoring"]
+  },
+  {
+    "id": "mentor-sk-ens",
+    "org": "SK E&S",
+    "topic": "AI 프로젝트 멘토링",
+    "cat": "mentoring",
+    "dates": [
+      "2026-07-01",
+      "2026-07-10",
+      "2026-07-16",
+      "2026-07-29",
+      "2026-08-26",
+      "2026-09-04",
+      "2026-09-09",
+      "2026-09-18"
+    ],
+    "types": ["mentoring"],
+    "projects": ["뉴스레터 자동화 에이전트", "복지 데이터 점검 에이전트"]
+  },
+  {
+    "id": "tutor-peaches",
+    "org": "Peaches",
+    "topic": "OpenClaw 설치 및 인스타 자동화 프로그램 설계",
+    "cat": "education",
+    "dates": ["2026-03-05"],
+    "types": ["vibe"]
+  },
+  {
+    "id": "tutor-rental",
+    "org": "렌탈클리닉",
+    "topic": "AI 활용 과외 / Claude Cowork·업무 자동화 설계",
+    "cat": "education",
+    "dates": ["2026-03-06"],
+    "types": ["vibe"]
+  },
+  {
+    "id": "education-individual",
+    "org": "개인",
+    "topic": "바이브코딩·AI 도구·노션 활용 등 개인 교육",
+    "cat": "education",
+    "dates": [
+      "2026-01-10",
+      "2026-01-12",
+      "2026-01-24",
+      "2026-02-07",
+      "2026-02-28"
+    ],
+    "types": ["vibe"]
+  }
+]

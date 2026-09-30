@@ -1,0 +1,21 @@
+{
+  "url": "https://portfolio-hwjoo.vercel.app",
+  "viewports": [
+    {
+      "name": "desktop",
+      "sideCardSelection": true,
+      "wrappedSideSelection": true,
+      "dragDoesNotTap": true,
+      "buttonsAndKeyboard": true,
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "sideCardSelection": true,
+      "wrappedSideSelection": true,
+      "dragDoesNotTap": true,
+      "buttonsAndKeyboard": true,
+      "errors": []
+    }
+  ]
+}

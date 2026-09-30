@@ -1,13 +1,11 @@
-import { ActivityHeatmap } from "@/components/sections/activity-heatmap"
 import { ActivityTimeline } from "@/components/sections/activity-timeline"
-import { ContactCta } from "@/components/sections/contact-cta"
+import { EducationFilterProvider } from "@/components/sections/education-filter"
+import { EducationPrograms } from "@/components/sections/education-programs"
 import { Hero } from "@/components/sections/hero"
 import { LogoWall } from "@/components/sections/logo-wall"
 import { Projects } from "@/components/sections/projects"
 import { SiteFooter } from "@/components/sections/site-footer"
 import { SiteNav } from "@/components/sections/site-nav"
-import { StatBand } from "@/components/sections/stat-band"
-import { Strengths } from "@/components/sections/strengths"
 
 export default function Page() {
   return (
@@ -15,13 +13,12 @@ export default function Page() {
       <SiteNav />
       <main>
         <Hero />
-        <StatBand />
-        <LogoWall />
-        <Strengths />
-        <ActivityTimeline />
-        <ActivityHeatmap />
+        <EducationFilterProvider>
+          <EducationPrograms />
+          <ActivityTimeline />
+        </EducationFilterProvider>
         <Projects />
-        <ContactCta />
+        <LogoWall />
       </main>
       <SiteFooter />
     </div>
