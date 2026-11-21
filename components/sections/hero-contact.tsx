@@ -4,13 +4,45 @@ import * as React from "react"
 import { AnimatePresence, motion } from "motion/react"
 import { Check, Copy, Mail, Phone } from "lucide-react"
 
+import { YOUTUBE_URL } from "@/lib/site"
 import { cn } from "@/lib/utils"
 
-const PHONE = { label: "PHONE", value: "010-5246-5778", href: "tel:+821052465778" }
+const PHONE = {
+  label: "PHONE",
+  value: "010-5246-5778",
+  href: "tel:+821052465778",
+}
 const EMAIL = {
   label: "EMAIL",
   value: "jhw102258@gmail.com",
   href: "mailto:jhw102258@gmail.com",
+}
+const YOUTUBE = {
+  label: "YOUTUBE",
+  value: "현우쌤",
+  href: YOUTUBE_URL,
+  copyValue: YOUTUBE_URL,
+  external: true,
+}
+
+// lucide-react 1.x에는 브랜드 아이콘이 없어 Phone·Mail과 같은 선 스타일로 그린다.
+function YoutubeIcon({ className }: { className?: string }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={2}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+      <path d="m10 15 5-3-5-3z" />
+    </svg>
+  )
 }
 
 function useCopy() {
@@ -80,18 +112,33 @@ function ContactChip({
   label,
   value,
   href,
+  copyValue = value,
+  external = false,
+  className,
 }: {
-  icon: typeof Phone
+  icon: React.ComponentType<{ className?: string }>
   label: string
   value: string
   href: string
+  copyValue?: string
+  external?: boolean
+  className?: string
 }) {
   return (
-    <div className="group flex items-center gap-3 rounded-2xl border bg-card py-2.5 pr-2 pl-2.5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md">
+    <div
+      className={cn(
+        "group flex items-center gap-3 rounded-2xl border bg-card py-2.5 pr-2 pl-2.5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md",
+        className
+      )}
+    >
       <span className="grid size-10 shrink-0 place-items-center rounded-xl bg-brand/10 text-brand transition-colors group-hover:bg-brand group-hover:text-brand-foreground">
         <Icon className="size-[18px]" />
       </span>
-      <a href={href} className="min-w-0 flex-1">
+      <a
+        href={href}
+        className="min-w-0 flex-1"
+        {...(external && { target: "_blank", rel: "noopener noreferrer" })}
+      >
         <span className="block font-mono text-[11px] font-semibold tracking-wider text-muted-foreground">
           {label}
         </span>
@@ -99,7 +146,7 @@ function ContactChip({
           {value}
         </span>
       </a>
-      <CopyButton value={value} label={label} />
+      <CopyButton value={copyValue} label={label} />
     </div>
   )
 }
@@ -109,6 +156,7 @@ export function ContactChips() {
     <div className="mt-6 grid max-w-2xl gap-3 sm:grid-cols-2">
       <ContactChip icon={Phone} {...PHONE} />
       <ContactChip icon={Mail} {...EMAIL} />
+      <ContactChip icon={YoutubeIcon} {...YOUTUBE} className="sm:col-span-2" />
     </div>
   )
 }

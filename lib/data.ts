@@ -15,7 +15,7 @@ import calendarCurriculum from "./calendar-curriculum.json"
 import clientLogos from "./client-logos.json"
 import extraOrgLogos from "./org-logos.json"
 
-export const calendarUpdatedAt = "2026-09-30"
+export const calendarUpdatedAt = "2026-11-21"
 export const activityStartDate = "2025-11-01"
 
 export const clients: { name: string; logo: string }[] = clientLogos
@@ -229,7 +229,7 @@ export const projects: Project[] = [
   },
   {
     period: "2026. 08",
-    title: "AI 진단 챗봇",
+    title: "AI 챗봇",
     image: "/projects/airex.png",
     org: "포스코",
   },

@@ -1,8 +1,7 @@
 import { ActivityHeatmap } from "@/components/sections/activity-heatmap"
 import { ContactChips } from "@/components/sections/hero-contact"
 
-const HEADSHOT =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuCtTW1Q2xRaaccTLL2A5VYeCvNrI8-KDFl05N3AdJQ0e4Q72TLv0imcMnD8YNoRLxzWpor7uFMnFeRBPo2QlbNPOMVJNs7i7ADU1xxMErR3F5ULOd8lCVAMPsH8gUKdyY8PK3hDoG5QXhonrxeCfbgGhd6RrxuP61uc5KPEkmtn-4UuMie3p6bNXXy6VtwWyONxSP_SjdsjA3Jd7NgXRT_ooM9YqTNaBuL5Iw-ExKU_GCg3bHjxArUhC421BTSvXt13w6rPa5EBO5mG"
+const HEADSHOT = "/profile.jpg"
 
 export function Hero() {
   return (

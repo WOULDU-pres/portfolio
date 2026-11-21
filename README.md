@@ -21,10 +21,12 @@ npm start        # 빌드 결과 실행
 
 ```
 app/
-  layout.tsx          # 폰트·메타데이터·테마(라이트 고정)
+  layout.tsx          # 폰트·메타데이터(canonical, Open Graph)·테마(라이트 고정)
   page.tsx            # 섹션 조립
+  robots.ts · sitemap.ts # /robots.txt, /sitemap.xml (사이트 주소 기준)
   globals.css         # 테마 토큰 (brand=#ba0035, tech=#4f46e5)
 lib/
+  site.ts             # 사이트 주소(https://hwjoo.xyz), 유튜브 채널 주소
   data.ts             # 교육 종류·고객사·프로젝트, 활동 그래프 집계
   calendar-activities.json # 교육·멘토링·녹화 강의, 기간별 단일 분류
   calendar-curriculum.json # 날짜 없는 교안·커리큘럼 제작 목록
@@ -41,21 +43,21 @@ components/
 
 ## 콘텐츠 수정
 
-교육·멘토링 이력은 **`lib/calendar-activities.json`**, 날짜 없는 교안 목록은 **`lib/calendar-curriculum.json`**, 자기소개는 **`components/sections/hero.tsx`**, 교육 종류·프로젝트는 **`lib/data.ts`**에서 고친다.
+교육·멘토링 이력은 **`lib/calendar-activities.json`**, 날짜 없는 교안 목록은 **`lib/calendar-curriculum.json`**, 자기소개는 **`components/sections/hero.tsx`**, 교육 종류·프로젝트는 **`lib/data.ts`**에서 고친다. 첫 화면의 전화, 이메일, 유튜브 연락처는 **`components/sections/hero-contact.tsx`**에 있고, 사이트 주소와 유튜브 채널 주소는 **`lib/site.ts`**에서 고친다. 사이트 주소를 바꾸면 canonical, Open Graph 주소, robots.txt, sitemap.xml이 함께 바뀐다.
 
-- `educationPrograms` — AI 리터러시·업무 활용, 바이브코딩(업무 자동화 포함), 데이터 분석·머신러닝, LLM·RAG 응용 개발, AI 프로젝트 멘토링, 교안·커리큘럼 제작. `image`는 `public/education/`의 생성 사진 경로.
-- `caseStudy` — 확인된 교육 사례. LLM 사례는 2026년 6월 22일 교육 기록이며, RAG는 요청된 교육 주제로 소개한다. 확인되지 않은 RAG 강의 이력을 만들지 않는다.
-- `activities` — `cat`은 교육/멘토링/녹화 강의, `types`는 교육 종류 목록(주제 미확인 시 빈 배열). 한 과정이 여러 종류에 걸치면 해당 탭마다 노출된다.
-- 한국지역난방공사 교육은 `AI Pioneer` 한 항목으로 묶고(기간 26.05~09), AI 리터러시·바이브코딩·데이터·LLM·프로젝트 멘토링 탭에 모두 노출한다. 개인 교육은 1~2월의 한 항목으로 묶고 기관명은 `개인`으로 표시한다.
+- `educationPrograms`: AI 리터러시·업무 활용, 바이브코딩(업무 자동화 포함), 데이터 분석·머신러닝, LLM·RAG 응용 개발, AI 프로젝트 멘토링, 교안·커리큘럼 제작. `image`는 `public/education/`의 생성 사진 경로.
+- `caseStudy`: 확인된 교육 사례. LLM 사례는 2026년 6월 22일 교육 기록이며, RAG는 요청된 교육 주제로 소개한다. 확인되지 않은 RAG 강의 이력을 만들지 않는다.
+- `activities`: `cat`은 교육/멘토링/녹화 강의, `types`는 교육 종류 목록(주제 미확인 시 빈 배열). 한 과정이 여러 종류에 걸치면 해당 탭마다 노출된다.
+- 한국지역난방공사 교육은 `AI Pioneer` 한 항목으로 묶고(기간 26.05~11), AI 리터러시·바이브코딩·데이터·LLM·프로젝트 멘토링 탭에 모두 노출한다. 개인 교육은 1~2월의 한 항목으로 묶고 기관명은 `개인`으로 표시한다.
 - 녹화 강의는 별도 탭 없이 `전체`에서만 보인다.
-- `curriculumActivities` — 교안·커리큘럼 목록. 날짜 필드가 없어 이력 표의 `교안 제작` 탭에서만 보이고 `전체`에는 섞지 않는다.
-- `projects` — 교육과 분리한 개발·연구 프로젝트. `image`는 `public/projects/`의 생성 PNG 경로.
+- `curriculumActivities`: 교안·커리큘럼 목록. 날짜 필드가 없어 이력 표의 `교안 제작` 탭에서만 보이고 `전체`에는 섞지 않는다.
+- `projects`: 교육과 분리한 개발·연구 프로젝트. `image`는 `public/projects/`의 생성 PNG 경로.
 - 숫자 통계 밴드와 푸터의 소셜·연락처 링크는 표시하지 않는다.
 - 고객사 영역은 페이지 하단에 작은 `Companies I’ve worked with` 제목과 실제 로고만 표시한다. `components/ui/logo-cloud-2.tsx`의 테두리 카드를 두 줄로 배치하고 왼쪽으로 일정하게 이동하며, 동일한 로고 묶음을 이어 붙여 끊김 없이 반복한다. 동작 줄이기 설정에서는 원본 로고를 가로 스크롤로 볼 수 있다. 확인하지 못한 로고는 제외한다. Aside로 확인한 출처는 `artifacts/client-logos/research.json`, 로고 파일은 `public/clients/`에 둔다.
 
 ## 캘린더 반영 기준
 
-- 마지막 확인: **2026-09-30**, 기간: **2025-11-01~2026-09-30** (Asia/Seoul).
+- 마지막 확인: **2026-11-21**, 기간: **2025-11-01~2026-11-21** (Asia/Seoul).
 - 기본 캘린더의 등록 일정을 교육 주제·기간별로 묶은 수동 스냅샷이다. API 자동 동기화는 하지 않는다.
 - 개인 생활 일정, 사전 미팅·행정 연락, 커뮤니티 행사, 취소·거절·미응답 일정은 교육 이력에서 제외한다. 공개 데이터에 참석자, 연락처, 캘린더 ID와 원문 설명을 저장하지 않는다.
 - 같은 교육의 같은 날짜 작업 블록은 한 번만 기록한다. 그래프는 교육·멘토링·녹화 강의의 실제 날짜로 생성하고 활동일은 날짜 중복을 제거해 센다.
@@ -64,7 +66,7 @@ components/
 
 ## 교육 종류 갤러리
 
-- `components/ui/elastic-gallery.tsx` — 접힌 항목은 직사각형, 클릭한 항목은 원으로 펼친다. hover로는 바뀌지 않는다(레이아웃이 움직이며 커서 아래 항목이 연쇄 선택되던 문제). 키보드는 Enter·Space.
+- `components/ui/elastic-gallery.tsx`: 접힌 항목은 직사각형, 클릭한 항목은 원으로 펼친다. hover로는 바뀌지 않는다(레이아웃이 움직이며 커서 아래 항목이 연쇄 선택되던 문제). 키보드는 Enter·Space.
 - 펼칠 때 `components/ui/liquid-reveal.tsx`의 WebGL 글래스 셰이더가 물결처럼 번진다. 동작 줄이기 설정에서는 생략한다. 흐림은 filter 대신 불투명도 레이어로 처리한다(filter 전환 시 확대 이미지가 흔들림).
 - 항목을 클릭하면 아래 이력 표가 같은 종류로 필터링된다. 이력 표 탭을 바꾸면 갤러리도 따라 펼쳐진다(`전체`·`녹화 강의` 제외).
 - 이미지는 god-tibo-imagen으로 생성한 실사풍 사진이다.
@@ -87,7 +89,7 @@ components/
 
 ## 배포
 
-Vercel 권장 — 루트를 `web/`로 지정하면 zero-config 배포된다.
+Vercel 프로젝트 `portfolio`는 GitHub 저장소와 연결되어 있어서 `main`에 푸시하면 Vercel이 프로덕션으로 배포한다. 프로덕션 주소는 https://hwjoo.xyz 이고, Vercel이 `www.hwjoo.xyz`와 `portfolio-hwjoo.vercel.app` 접속을 이 주소로 308 리디렉트한다. 저장소 루트가 이 폴더라서 Root Directory는 기본값(`.`)이다. CLI로 로컬 파일을 바로 올릴 수도 있다.
 
 ```bash
 npx vercel        # 프리뷰

@@ -1,5 +1,20 @@
 [
   {
+    "id": "plan-gmarket",
+    "org": "지마켓",
+    "topic": "비개발자 대상 Claude Code 교안 제작"
+  },
+  {
+    "id": "plan-nongshim-gemini",
+    "org": "농심",
+    "topic": "국내영업 대상 Gemini 중급 교안 제작"
+  },
+  {
+    "id": "plan-nexon",
+    "org": "넥슨",
+    "topic": "Stage2 교안 및 부록 자료 제작"
+  },
+  {
     "id": "plan-security",
     "org": "KITECH",
     "topic": "환경 설정 교안 제작"

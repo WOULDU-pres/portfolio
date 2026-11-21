@@ -8,9 +8,7 @@ export function Projects() {
         <p className="font-mono text-xs tracking-[0.2em] text-brand uppercase">
           Projects
         </p>
-        <h2 className="mt-2 text-3xl font-bold tracking-tight">
-          프로젝트 개발 · 연구
-        </h2>
+        <h2 className="mt-2 text-3xl font-bold tracking-tight">프로젝트</h2>
       </div>
       <CarouselStacked
         slides={projects.map((project) => ({
